@@ -11,12 +11,12 @@ body {
     height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-a {
+a.top {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
-a:hover {
+a.top:hover {
     background-color: aliceblue;
     color:black;
     padding: 0.4vw;
@@ -93,7 +93,13 @@ div#main:hover {
     margin: 0.5rem;
     padding: 0.8rem;
 }
-
+.contato {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style:circle;
+}
 #hab {
     display: flex;
     direction: row;
