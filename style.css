@@ -31,6 +31,8 @@ body {
     list-style: none;
     width: auto;
     flex: 1;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.842);
+    
 }
 a.top {
     text-decoration: none;
@@ -162,6 +164,9 @@ th {
     .contato, #idioma a {
         text-decoration: none;
         color: blue;
+    }
+    .more {
+        font-size: 3.5vw;
     }
 
 }
