@@ -5,11 +5,32 @@ body {
     margin: 0px;
     padding: 0px;
     background-image: url("files/BK_2.png");
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.3);
     background-size: cover;
     background-position: center;
     height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Próximos 4 seletores são do menu no topo!*/
+#main-top {
+    background-color: black;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    height: auto;
+    padding: 20px;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+}
+.main-items {
+    font-weight: bolder;
+    font-size: 1.4vw;
+    list-style: none;
+    width: auto;
+    flex: 1;
 }
 a.top {
     text-decoration: none;
@@ -23,46 +44,30 @@ a.top:hover {
     border-radius: 0.5rem;
     transition-duration: 0.3s ;
 }
-.main-items {
-    font-weight: bolder;
-    font-size: 1.4vw;
-    list-style: none;
-    
-    width: auto;
-    flex: 1;
-}
-#main-top {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-radius: 0.5rem;
-    height: auto;
-    padding: 20px;
-    margin-left: 0.4vw;
-    margin-right: 0.4vw;
-}
+
+/* Próximos 2 seletores são da folha abaixo do menu!*/
 div#main {
     padding: 1.4rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
     font-size: 1.4vw;
     color: rgb(0, 0, 0);
-    width: 80vw;
+    width: 85vw;
     max-width: 900px;
     height: auto;
     max-height: 1200px;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     background: rgb(255, 255, 255);
-    box-shadow: 0.125rem 0.125rem 1rem 0.125rem blue;
+    box-shadow: 0.125rem 0.125rem 1rem 0.125rem black;
     opacity: 96%;
 }
 div#main:hover {
-    box-shadow: 0.125rem 0.125rem 1rem 0.125rem red;
+    box-shadow: 0.125rem 0.125rem 1rem 0.125rem blue;
     transition-duration: 0.5s;
 }
+
+/* Próximos 3 seletores são onde estão o nome e a foto!*/
 #head {
     display: flex;
 
@@ -82,28 +87,50 @@ div#main:hover {
     object-fit: cover;
     margin: 0.3em;
 }
+
+/* Próximos 2 seletores são das sessões que vão entrar as caixas!*/
 #sections {
     display: flex;
     flex-direction: row;
 }
-
 .section {
     border: 0.0625rem solid rgba(128, 128, 128, 0.788);
     flex: 1;
     margin: 0.5rem;
     padding: 0.8rem;
 }
-.contato {
+
+/* Próximos 3 seletores são dos hyperlinks em contato e idioma!*/
+.contato, #idioma a {
     text-decoration: none;
     color: black;
 }
+.boxInfo:hover .contato {
+    color: blue;
+}
+#idioma:hover ul li a {
+    color: blue;
+}
+/*Todas as ul!*/
 ul {
     list-style:circle;
 }
-#hab {
-    display: flex;
-    direction: row;
+
+#tabela-hab {
+    text-align:start;
 }
+#tabela-hab caption {
+    border-bottom: 1px solid;
+}
+#tabela-hab:hover .soft {
+    color: #fc4830;
+    text-shadow: 0.2px 0.2px 0.2px black;
+}
+#tabela-hab:hover .hard {
+    color: blue;
+    text-shadow: 0.2px 0.2px 0.2px black;
+}
+
 
 @media (max-width: 768px) {
     .first h1 {
@@ -120,8 +147,6 @@ ul {
         height: 50vh;
     }
     div#main {
-        margin-top: 5%;
-        margin-bottom: 5%;
         font-size: 2.5vw;
         width: 95vw;
     }
