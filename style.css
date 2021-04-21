@@ -140,6 +140,9 @@ th {
 #tabela-hab:hover .hard {
     color: blue;
 }
+abbr {
+    text-decoration: underline;
+}
 
 
 @media (max-width: 768px) {
