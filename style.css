@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("files/BK_2.png");
+    background-color: rgba(0, 0, 0, 0.212);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+div#main {
+    padding: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+    width: 80vw;
+    max-width: 900px;
+    height: auto;
+    max-height: 1200px;
+    line-height: 1.4rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0.125rem 0.125rem 1rem 0.125rem blue;
+}
+div#main:hover {
+    box-shadow: 0.125rem 0.125rem 1rem 0.125rem red;
+}
+#head {
+    display: flex;
+
+}
+.first h1 {
+    font-size: 3vw;
+    line-height: 200%;
+    padding: 5%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#foto {
+    align-self: center;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    margin: 0.3em;
+}
+#sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    border: 0.0625rem solid rgba(128, 128, 128, 0.788);
+    flex: 1;
+    margin: 0.5rem;
+    padding: 0.8rem;
+}
+
+#hab {
+    display: flex;
+    direction: row;
+}
+
+@media (max-width: 414px) {
+    div#main {
+        font-size: 2.5vw;
+    }
+    .first h1 {
+        font-size: 4.5vw;
+    }
+    .section {
+        border: 0;
+    }
+    #sections {
+        display: flex;
+        flex-direction: column;
+        border: 0.0625rem solid rgba(128, 128, 128, 0.788);
+    }
+
+}
