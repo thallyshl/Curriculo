@@ -9,6 +9,38 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+a:hover {
+    background-color: aliceblue;
+    color:black;
+    padding: 0.4vw;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s ;
+}
+.main-items {
+    font-weight: bolder;
+    font-size: 1.4vw;
+    list-style: none;
+    
+    width: auto;
+    flex: 1;
+}
+#main-top {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    height: auto;
+    padding: 20px;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
 }
 div#main {
     padding: 1.4rem;
@@ -16,7 +48,7 @@ div#main {
     margin-right: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    font-size: 1vw;
+    font-size: 1.4vw;
     color: rgb(0, 0, 0);
     width: 80vw;
     max-width: 900px;
@@ -25,9 +57,11 @@ div#main {
     line-height: 1.4rem;
     background: rgb(255, 255, 255);
     box-shadow: 0.125rem 0.125rem 1rem 0.125rem blue;
+    opacity: 96%;
 }
 div#main:hover {
     box-shadow: 0.125rem 0.125rem 1rem 0.125rem red;
+    transition-duration: 0.5s;
 }
 #head {
     display: flex;
@@ -66,9 +100,6 @@ div#main:hover {
 }
 
 @media (max-width: 768px) {
-    div#main {
-        font-size: 2.5vw;
-    }
     .first h1 {
         font-size: 4.5vw;
     }
@@ -78,6 +109,15 @@ div#main:hover {
     #sections {
         display: block;
         border: 0.0625rem solid rgba(128, 128, 128, 0.788);
+    }
+    body {
+        height: 50vh;
+    }
+    div#main {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 2.5vw;
+        width: 95vw;
     }
 
 }
