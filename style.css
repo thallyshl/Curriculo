@@ -4,8 +4,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("files/BK_2.png");
-    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("files/BK_.png");
+    background-color: rgba(0, 0, 0, 0.25);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -51,7 +51,7 @@ div#main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: rgb(0, 0, 0);
     width: 85vw;
     max-width: 900px;
@@ -100,7 +100,7 @@ div#main:hover {
     padding: 0.8rem;
 }
 
-/* Próximos 3 seletores são dos hyperlinks em contato e idioma!*/
+/* Próximos 3 seletores são dos hyperlinks em contato, more e idioma!*/
 .contato, #idioma a {
     text-decoration: none;
     color: black;
@@ -111,24 +111,32 @@ div#main:hover {
 #idioma:hover ul li a {
     color: blue;
 }
+.more {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: blue;
+}
 /*Todas as ul!*/
 ul {
     list-style:circle;
 }
 
+/*Próximos 5 seletores são para habilidades*/
 #tabela-hab {
     text-align:start;
 }
-#tabela-hab caption {
-    border-bottom: 1px solid;
+#tabela-hab {
+    text-align: center;
+    padding: 2vw;
+}
+th {
+    border-bottom: 1px solid black;
 }
 #tabela-hab:hover .soft {
     color: #fc4830;
-    text-shadow: 0.2px 0.2px 0.2px black;
 }
 #tabela-hab:hover .hard {
     color: blue;
-    text-shadow: 0.2px 0.2px 0.2px black;
 }
 
 
