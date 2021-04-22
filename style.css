@@ -12,6 +12,11 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*Parte do menu mobile*/
+#main-top_mobile {
+    display: none;
+}
+
 /*Próximos 4 seletores são do menu no topo!*/
 #main-top {
     background-color: black;
@@ -172,5 +177,23 @@ abbr {
     .more {
         font-size: 3vw;
     }
+    .main-items {
+        display: none;
+    }
+    #main-top {
+        display: none;
+    }
+    #main-top_mobile {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        height: 10vh;
+        opacity: 90%;
+    }
+    #main-top_mobile p {
+        color: white;
+        font-size: 250%;
+        margin-left: 10%;
 
+    }
 }
