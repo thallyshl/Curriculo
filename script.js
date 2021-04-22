@@ -17,6 +17,7 @@ function menuMobile() {
 }
 function mobileTop () {
     document.body.style.overflow = show ? "hidden" : "initial"
+    paragraphMenu.innerHTML = show ? "&#x2716;" : "&equiv;"
     menuSection.classList.toggle("on", show);
     show = !show;
 }
