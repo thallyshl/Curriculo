@@ -162,7 +162,7 @@ abbr {
         border: 0.0625rem solid rgba(128, 128, 128, 0.788);
     }
     body {
-        height: 50vh;
+        height: 100vh;
     }
     div#main {
         font-size: 2.5vw;
@@ -177,10 +177,7 @@ abbr {
     .more {
         font-size: 3vw;
     }
-    .main-items {
-        display: none;
-    }
-    #main-top {
+    nav#main-top {
         display: none;
     }
     #main-top_mobile {
@@ -188,12 +185,39 @@ abbr {
         align-items: center;
         background-color: black;
         height: 10vh;
-        opacity: 90%;
+        opacity: 98%;
     }
     #main-top_mobile p {
         color: white;
-        font-size: 250%;
+        font-size: 280%;
         margin-left: 10%;
 
     }
+
+    /*Fullscreen*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        opacity: 98%;
+        z-index: 3;
+        transition-duration: 0.1s;
+    }
+    .menu-section.on nav#main-top {
+        display: block;
+    }
+    .menu-section.on nav#main-top li {
+        font-size: 4vw;
+        line-height: 170%;
+        margin: auto;
+        border: 0px;
+    }
+    .menu-section.on nav#main-top li a {
+        transition-duration: 0.1s;
+    }
+
+
 }
