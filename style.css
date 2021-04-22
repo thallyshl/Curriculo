@@ -225,9 +225,14 @@ abbr {
     }
     .menu-section.on nav#main-top li {
         font-size: 4vw;
-        line-height: 170%;
+        line-height: 200%;
         margin: auto;
         border: 0px;
+    }
+    .menu-section.on nav#main-top .main-items {
+        border: 1px solid white;
+        margin: 10px;
+        padding: 2px;
     }
     .menu-section.on nav#main-top li a {
         transition-duration: 0.1s;
