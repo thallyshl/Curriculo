@@ -191,11 +191,16 @@ abbr {
         color: white;
         font-size: 280%;
         margin-left: 10%;
-
+    }
+    .ligarMenu {
+        margin-left: 10%;
     }
 
     /*Fullscreen*/
     .menu-section.on {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -205,6 +210,11 @@ abbr {
         opacity: 98%;
         z-index: 3;
         transition-duration: 0.1s;
+    }
+    .menu-section.on #main-top_mobile .ligarMenu {
+        position: absolute;
+        left: 0;
+        top: -8.6%;
     }
     .menu-section.on nav#main-top {
         display: block;

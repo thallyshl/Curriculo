@@ -3,8 +3,8 @@
 
 let show = true;
 const menuSection = document.querySelector(".menu-section")
-const mainMobile = document.querySelector(".main-top_mobile")
-const mainItems = document.querySelector ("main-items")
+//const mainMobile = document.querySelector(".main-top_mobile")
+//const mainItems = document.querySelector (".main-items")
 
 function menuMobile() {
     document.body.style.overflow = show ? "hidden" : "initial"
