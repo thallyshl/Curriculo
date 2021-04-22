@@ -163,6 +163,7 @@ abbr {
         font-size: 2.5vw;
         width: 95vw;
         box-shadow: 0.125rem 0.125rem 1rem 0.125rem blue;
+        max-height: 2000px;
     }
     .contato, #idioma a {
         text-decoration: none;
