@@ -214,7 +214,11 @@ abbr {
     .menu-section.on #main-top_mobile .ligarMenu {
         position: absolute;
         left: 0;
-        top: -8.6%;
+        top: 0%;
+    }
+    .menu-section.on #main-top_mobile .ligarMenu p {
+        font-size: 200%;
+        margin: 0;
     }
     .menu-section.on nav#main-top {
         display: block;
@@ -228,6 +232,4 @@ abbr {
     .menu-section.on nav#main-top li a {
         transition-duration: 0.1s;
     }
-
-
 }
