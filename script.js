@@ -16,7 +16,7 @@ function menuMobile() {
     console.log(show)
 }
 function mobileTop () {
-    document.body.style.overflow = show ? "hidden" : "initial"
+    document.body.style.overflow = "initial"
     paragraphMenu.innerHTML = show ? "&#x2716;" : "&equiv;"
     menuSection.classList.toggle("on", show);
     show = !show;
