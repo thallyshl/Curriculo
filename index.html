@@ -19,14 +19,21 @@
         
         <!--Esse menu é ativado para mais de 768px-->
         <nav id="main-top">
-            <li class="main-items" onclick="mobileTop()"><a href="#perfil" target="_self" class="top">Perfil</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#contato" target="_self" class="top">Contato</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#idioma" target="_self" class="top">Idioma</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#habilidades" target="_self" class="top">Habilidades</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#profissional" target="_self" class="top">Profissionais</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#voluntario" target="_self" class="top">Voluntariado</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#formação" target="_self" class="top">Formação</a></li>
-            <li class="main-items" onclick="mobileTop()"><a href="#certificados" target="_self" class="top">Certificados</a></li>
+            <ul id="main-top-list">
+                <li class="main-items" onclick="mobileTop()"><a href="#perfil" target="_self" class="top">Perfil</a></li>
+                <li class="main-items" onclick="mobileTop()"><a href="#contato" target="_self" class="top">Contato</a></li>
+                <li class="main-items" onclick="mobileTop()"><a href="#idioma" target="_self" class="top">Idioma</a></li>
+                <li class="main-items" onclick="mobileTop()"><a href="#habilidades" target="_self" class="top">Habilidades</a></li>
+                <li class="main-items" onclick="mobileTop()"><a href="#profissional" target="_self" class="top">Experiências</a>
+                    <ul>
+                        <li onclick="mobileTop()"><a href="#profissional" target="_self" class="top">Profissionais</a></li>
+
+                        <li onclick="mobileTop()"><a href="#voluntario" target="_self" class="top">Voluntariado</a></li>
+
+                        <li onclick="mobileTop()"><a href="#formação" target="_self" class="top">Formação</a></li>
+                    </ul>
+                <li class="main-items" onclick="mobileTop()"><a href="#certificados" target="_self" class="top">Certificados</a></li>
+            </ul>
         </nav>
     </div>
 
